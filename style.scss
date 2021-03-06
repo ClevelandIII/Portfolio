@@ -177,18 +177,6 @@ a {
         &:last-child {
             padding-bottom: 0;
         }
-
-        &::before {
-            content: "";
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            border-radius: 50px;
-            left: 0;
-            top: 0;
-            background: $secondary-color;
-            border: 2px solid $primary-color;
-        }
     }
 }
 

@@ -179,18 +179,6 @@ a:hover {
   padding-bottom: 0;
 }
 
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: 0;
-  top: 0;
-  background: #1567ff;
-  border: 2px solid #95baff;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
