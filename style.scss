@@ -54,6 +54,7 @@ a {
 
     .landing-container {
         position: absolute;
+        text-shadow: 2px 2px #040404;
         top: 0;
         right: 0;
         left: 0;
@@ -235,7 +236,7 @@ a {
     transform: rotate(-90deg);
 }
 
-#change{
+.fab{
 
     &:hover{
         color: $secondary-color;
