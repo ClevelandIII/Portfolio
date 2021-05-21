@@ -41,7 +41,7 @@ a:hover {
 
 #landing::before {
   content: "";
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.438);
   position: absolute;
   top: 0;
   right: 0;
@@ -244,5 +244,29 @@ a:hover {
   color: #1567ff;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.btn {
+  background-color: #95baff;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #1567ff;
+  text-decoration: none;
+}
+
+#blue {
+  color: #95baff;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#blue:hover {
+  color: #1567ff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

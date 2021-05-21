@@ -40,11 +40,11 @@ a {
     height: 100vh;
     background-size: cover;
     position: relative;
-    background: url("Capture.PNG") ;
+    background: url("Capture.PNG");
 
     &::before {
         content: "";
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.438);
         position: absolute;
         top: 0;
         right: 0;
@@ -202,29 +202,29 @@ a {
     }
 }
 
-.container{
-    .half{
+.container {
+    .half {
         width: 49%;
         border-radius: 7px;
         outline: none;
     }
-    #norm{
+    #norm {
         width: 99%;
         border-radius: 7px;
         outline: none;
     }
-    #large{
+    #large {
         width: 99%;
         border-radius: 7px;
         outline: none;
     }
-    #submitMessage{
+    #submitMessage {
         margin-top: 7rem;
         text-align: center;
         background-color: $primary-color;
         border-radius: 7px;
         transition: 0.5s;
-        &:hover{
+        &:hover {
             background-color: $secondary-color;
             border-radius: 7px;
             transition: 0.5s;
@@ -232,14 +232,35 @@ a {
     }
 }
 
-#rotate{
+#rotate {
     transform: rotate(-90deg);
 }
 
-.fab{
-
-    &:hover{
+.fab {
+    &:hover {
         color: $secondary-color;
         transition: 1s;
+    }
+}
+
+.btn {
+    background-color: $primary-color;
+    text-decoration: none;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $secondary-color;
+        text-decoration: none;
+    }
+}
+
+#blue{
+    color: $primary-color;
+    text-decoration: none;
+    transition: 0.5s;
+
+    &:hover {
+        color: $secondary-color;
+        text-decoration: none;
     }
 }
