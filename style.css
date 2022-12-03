@@ -6,7 +6,6 @@ body {
   background: transparent;
   overflow: overlay;
 }
-
 body::before {
   content: "";
   position: fixed;
@@ -20,14 +19,12 @@ body::before {
 }
 
 a {
-  color: #95baff;
+  color: rgb(149, 186, 255);
   text-decoration: none;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 a:hover {
-  color: #1567ff;
+  color: rgb(21, 103, 255);
   text-decoration: none;
 }
 
@@ -38,17 +35,15 @@ a:hover {
   position: relative;
   background: url("Capture.PNG");
 }
-
 #landing::before {
   content: "";
-  background: rgba(0, 0, 0, 0.438);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
 }
-
 #landing .landing-container {
   position: absolute;
   text-shadow: 2px 2px #040404;
@@ -56,28 +51,17 @@ a:hover {
   right: 0;
   left: 0;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 0 15px;
 }
-
 #landing h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
   color: #fff;
 }
-
 #landing h2 {
   color: #eee;
   margin-bottom: 50px;
@@ -86,19 +70,15 @@ a:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 #landing .btn-scroll {
-  -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #95baff;
+  color: rgb(149, 186, 255);
 }
-
 #landing .btn-scroll i {
   font-size: 48px;
 }
-
 #landing .btn-scroll:hover {
-  color: #1567ff;
+  color: rgb(21, 103, 255);
 }
 
 .skills .progress {
@@ -107,7 +87,6 @@ a:hover {
   background: none;
   border-radius: 0;
 }
-
 .skills .progress .skill {
   padding: 10px 0;
   margin: 0;
@@ -117,21 +96,17 @@ a:hover {
   font-family: sans-serif;
   color: #fff;
 }
-
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
 }
-
 .skills .progress-bar-wrap {
   background: gray;
   border-radius: 7px;
 }
-
 .skills .progress-bar {
   height: 10px;
-  background: -webkit-gradient(linear, left top, right top, from(#1567ff), to(#95baff));
-  background: linear-gradient(to right, #1567ff, #95baff);
+  background: linear-gradient(to right, rgb(21, 103, 255), rgb(149, 186, 255));
   border-radius: 7px;
 }
 
@@ -142,24 +117,21 @@ a:hover {
   margin-bottom: 20px;
   color: #fff;
 }
-
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2;
-  border-left: 2px solid #1567ff;
+  border-left: 2px solid rgb(21, 103, 255);
   position: relative;
 }
-
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   font-family: sans-serif;
-  color: #95baff;
+  color: rgb(149, 186, 255);
   margin-bottom: 10px;
 }
-
 .resume .resume-item h5 {
   font-size: 16px;
   background: rgba(255, 255, 255, 0.2);
@@ -169,15 +141,12 @@ a:hover {
   margin-bottom: 10px;
   border-radius: 7px;
 }
-
 .resume .resume-item ul {
   padding-left: 10px;
 }
-
 .resume .resume-item ul li {
   padding-bottom: 0;
 }
-
 .resume .resume-item:last-child {
   padding-bottom: 0;
 }
@@ -195,7 +164,6 @@ a:hover {
   background: rgba(149, 186, 255, 0.5);
   border-radius: 7px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(21, 103, 255, 0.5);
   border-radius: 7px;
@@ -206,67 +174,54 @@ a:hover {
   border-radius: 7px;
   outline: none;
 }
-
 .container #norm {
   width: 99%;
   border-radius: 7px;
   outline: none;
 }
-
 .container #large {
   width: 99%;
   border-radius: 7px;
   outline: none;
 }
-
 .container #submitMessage {
   margin-top: 7rem;
   text-align: center;
-  background-color: #95baff;
+  background-color: rgb(149, 186, 255);
   border-radius: 7px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .container #submitMessage:hover {
-  background-color: #1567ff;
+  background-color: rgb(21, 103, 255);
   border-radius: 7px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 #rotate {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .fab:hover {
-  color: #1567ff;
-  -webkit-transition: 1s;
+  color: rgb(21, 103, 255);
   transition: 1s;
 }
 
 .btn {
-  background-color: #95baff;
+  background-color: rgb(149, 186, 255);
   text-decoration: none;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .btn:hover {
-  background-color: #1567ff;
+  background-color: rgb(21, 103, 255);
   text-decoration: none;
 }
 
 #blue {
-  color: #95baff;
+  color: rgb(149, 186, 255);
   text-decoration: none;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 #blue:hover {
-  color: #1567ff;
+  color: rgb(21, 103, 255);
   text-decoration: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
