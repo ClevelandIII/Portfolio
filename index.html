@@ -1,221 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Cleveland Williams" />
+        <meta
+            name="description"
+            content="Hi! My name is Cleveland Williams, and I am a Full-Stack Web Developer and general Software Engineer"
+        />
+        <meta name="robots" content="index, follow" />
 
-<head>
-    <meta charset="UFT-8">
-    <meta name="author" content="Cleveland H. Williams III">
-    <meta name="description" content="Description of website">
+        <meta property="og:title" content="Cleveland's Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="images/codeBackground.PNG" />
+        <meta
+            property="og:url"
+            content="https://clevelandiii.github.io/Resume/"
+        />
 
-    <meta property="og:image" content="Url to an image">
-    <meta property="og:title" content="Title Here">
-    <meta property="og:description" content="short decription about your page">
+        <title>Limitless Fitness</title>
 
-    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+        ></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+        <!-- FontAwesome -->
+        <script
+            defer
+            src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"
+        ></script>
+        <script
+            defer
+            src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"
+        ></script>
+        <script
+            defer
+            src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"
+        ></script>
 
-    <!-- Our project just needs Font Awesome solid + brand -->
-    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
-    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
-    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+        <!-- Normal Links -->
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
 
-    <title>Cleveland's Portfolio & Resume</title>
-</head>
+        <title>Cleveland's Portfolio</title>
+    </head>
 
-<body>
-
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark text-white fixed-top">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand mb-0 h1" id="blue">Resume</a>
-            <button class="bg-dark text-white navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation"><span
-                    class="navbar-toggler-icon">
-                    <p id="rotate">|||</p>
-                </span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="#landing" aria-current="page"
-                            class="nav-link active text-white">Home</a></li>
-                    <li class="nav-item"><a href="#about" aria-current="page"
-                            class="nav-link active text-white">About</a></li>
-                    <li class="nav-item"><a href="#skills" aria-current="page"
-                            class="nav-link active text-white">Skills</a></li>
-                    <li class="nav-item"><a href="#resume" aria-current="page"
-                            class="nav-link active text-white">Resume</a></li>
-                    <li class="nav-item"><a href="#portfolio" aria-current="page"
-                            class="nav-link active text-white">Portfolio</a></li>
-                    <li class="nav-item"><a href="#contact" aria-current="page"
-                            class="nav-link active text-white">Contact</a></li>
-                </ul>
-                <a href="https://github.com/ClevelandIII" target="_blank"><i class="fab fa-github" style="height: 30px; width: 30px;"></i></a>
-                <a href="http://linkedin.com/in/cleveland-williams-a40918208"  target="_blank"><i class="fab fa-linkedin" style="height: 30px; width: 30px;"></i></a>
-                <a href="https://twitter.com/Cleveland20XX"  target="_blank"><i class="fab fa-twitter" style="height: 30px; width: 30px;"></i></a>
-            </div>
-        </div>
-    </nav>
-    <!--/Navbar-->
-
-    <!--landing-->
-    <section id="landing">
-        <div class="landing-container">
-            <h1 style="text-align: center;">Cleveland H. Williams III</h1>
-            <h2 style="text-align: center;">I am a Full-Stack Web Developer (in training) that lives in Arizona.</h2>
-        </div>
-    </section>
-    <!--/landing-->
+    <body>
+        <header id="landing">
+            <div id="coverImage"></div>
+            <h1>Hello, My name is Cleveland.</h1>
+            <p>
+                I'm a student at ASU, who is majoring in GIT, with a focus in
+                Full-Stack Web Design.
+            </p>
+        </header>
+        <main>
+            <section id="about">
+                <img
+                    src="images/me.jpg"
+                    alt="A studio quality photo of myself."
+                />
+                <section>
+                    <h2>About</h2>
+                    <p>
+                        My name is Cleveland Williams. I am a student with
+                        experience in both frontend web design and back end. In
+                        addition, I have lots of experience with graphic design
+                        as well, ranging from 2D design to 3D design, whle using
+                        many different design processes between to help finish a
+                        project.
+                    </p>
+                </section>
+            </section>
+        </main>
+        <footer></footer>
 
 
-    <!--About-->
-    <div class="container" id="about">
-        <h1 style="text-align: center;">About</h1><br>
-        <!--Row 1-->
-        <div class="row">
-            <div class="col-md-6 mb-4 col-lg-4">
-                <div class="view overlay z-depth-1-half">
-                    <img src="a19424ef-ef54-47db-9e2c-fe7be1a8d5af-8056.jfif" alt="Bad Picture of Me"
-                        class="card-img-top" style="height: 26rem">
-                    <div class="mask rgba-white-light"></div>
-                </div>
-            </div>
+        <hr />
 
-            <div class="col-md-6 mb-8 col-lg-8">
-                <p>My name is Cleveland WIlliams. I am a student with experience in both frontend web design and back end. In addition, I have lots of experience with graphic design as well, ranging from 2D design to 3D design, whle using many different design processes between to help finish a project.</p>
-            </div>
-        </div>
-    </div>
-    <!--/About-->
-
-    <hr>
-
-    <!--skills-->
-    <div id="skills" class="skills container">
-        <div class="section-title">
-            <h2 style="text-align: center;">Skills</h2>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-6">
-
-                <div class="progress">
-                    <span class="skill">HTML<i class="val">82%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 82%;"></div>
-                    </div>
-                </div>
-
-                <div class="progress"><span class="skill">CSS<i class="val">72%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 72%;"></div>
-                    </div>
-                </div>
-
-                <div class="progress">
-                    <span class="skill">SASS<i class="val">72%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 72%;"></div>
-                    </div>
-                </div>
-
-                <div class="progress"><span class="skill">Node.js<i class="val">20%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 20%;"></div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-lg-6">
-
-                <div class="progress"><span class="skill">JS<i class="val">70%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 70%;"></div>
-                    </div>
-                </div>
-
-                <div class="progress"><span class="skill">JQuery<i class="val">45%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 45%;"></div>
-                    </div>
-                </div>
-
-                <div class="progress"><span class="skill">Bootstrap<i class="val">35%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 35%;"></div>
-                    </div>
-                </div>
-
-                <div class="progress"><span class="skill">React<i class="val">20%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" style="width: 20%;"></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    <!--/skills-->
-
-    <hr>
-
-    <!--resume-->
-    <section class="resume" id="resume">
-
-        <div class="container">
+        <!--skills-->
+        <div id="skills" class="skills container">
             <div class="section-title">
-                <h2 style="text-align: center;">Resume</h2><br>
+                <h2 style="text-align: center">Skills</h2>
             </div>
 
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <h3 class="resume-title">Schooling</h3>
-                    <!--home-->
-                    <div class="resume-item">
-                        <h4>High School Diploma</h4>
-                        <h5>2022</h5>
-                        <p><em>Centennial High School</em></p>
+                <div class="col-lg-6">
+                    <div class="progress">
+                        <span class="skill">HTML<i class="val">82%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 82%"></div>
+                        </div>
                     </div>
 
-                    <!--west-mec-->
-                    <div class="resume-item">
-                        <h4>Two Year Diploma</h4>
-                        <h5>2022</h5>
-                        <p><em>West-MEC Central Campus</em></p>
+                    <div class="progress">
+                        <span class="skill">CSS<i class="val">72%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 72%"></div>
+                        </div>
                     </div>
 
-                    <!--asu-->
-                    <div class="resume-item">
-                        <h4>Four Year Diploma (Pending)</h4>
-                        <h5>2026</h5>
-                        <p><em>ASU Polytechnic Campus</em></p>
+                    <div class="progress">
+                        <span class="skill">SASS<i class="val">72%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 72%"></div>
+                        </div>
                     </div>
 
+                    <div class="progress">
+                        <span class="skill">Node.js<i class="val">20%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 20%"></div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <h3 class="resume-title">Certifications</h3>
-                    <div class="resume-item">
-                        <h4>Microsoft Technology Associate Certification</h4>
-                        <h5>2021</h5>
-                        <p><em>Provided by West-MEC</em></p>
+                <div class="col-lg-6">
+                    <div class="progress">
+                        <span class="skill">JS<i class="val">70%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
                     </div>
 
-                    <div class="resume-item">
-                        <h4>AP Computer science test</h4>
-                        <h5>2022</h5>
-                        <p><em>Centennial provided</em></p>
+                    <div class="progress">
+                        <span class="skill">JQuery<i class="val">45%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 45%"></div>
+                        </div>
                     </div>
 
-                    <div class="resume-item">
-                        <h4>Javascript Certification</h4>
-                        <h5>2022</h5>
-                        <p><em>Provided by West-MEC</em></p>
+                    <div class="progress">
+                        <span class="skill"
+                            >Bootstrap<i class="val">35%</i></span
+                        >
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 35%"></div>
+                        </div>
                     </div>
 
-                    <!-- <h3 class="resume-title">Professional Experience</h3>
+                    <div class="progress">
+                        <span class="skill">React<i class="val">20%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" style="width: 20%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/skills-->
+
+        <hr />
+
+        <!--resume-->
+        <section class="resume" id="resume">
+            <div class="container">
+                <div class="section-title">
+                    <h2 style="text-align: center">Resume</h2>
+                    <br />
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <h3 class="resume-title">Schooling</h3>
+                        <!--home-->
+                        <div class="resume-item">
+                            <h4>High School Diploma</h4>
+                            <h5>2022</h5>
+                            <p><em>Centennial High School</em></p>
+                        </div>
+
+                        <!--west-mec-->
+                        <div class="resume-item">
+                            <h4>Two Year Diploma</h4>
+                            <h5>2022</h5>
+                            <p><em>West-MEC Central Campus</em></p>
+                        </div>
+
+                        <!--asu-->
+                        <div class="resume-item">
+                            <h4>Four Year Diploma (Pending)</h4>
+                            <h5>2026</h5>
+                            <p><em>ASU Polytechnic Campus</em></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <h3 class="resume-title">Certifications</h3>
+                        <div class="resume-item">
+                            <h4>
+                                Microsoft Technology Associate Certification
+                            </h4>
+                            <h5>2021</h5>
+                            <p><em>Provided by West-MEC</em></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <h4>AP Computer science test</h4>
+                            <h5>2022</h5>
+                            <p><em>Centennial provided</em></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <h4>Javascript Certification</h4>
+                            <h5>2022</h5>
+                            <p><em>Provided by West-MEC</em></p>
+                        </div>
+
+                        <!-- <h3 class="resume-title">Professional Experience</h3>
                     <div class="resume-item">
                         <h4>position at company</h4>
                         <h5>years worked there (company)</h5>
@@ -229,178 +231,267 @@
                             <li>related skills</li>
                         </ul>
                     </div> -->
-
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-    <!--/resume-->
-
-    <hr>
-
-    <!--Portfolio-->
-    <div class="container" id="portfolio">
-        <h1 style="text-align: center;">Portfolio</h1><br>
-        <!--Row 1-->
-        <div class="row">
-
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-7">
-                <div class="card bg-dark">
-                    <!--Card Image-->
-                    <div class="view overlay">
-                        <img src="Weather.PNG" alt="Rigged Website Homepage" class="card-img-top bg-dark">
-                        <a href="#">
-                            <div class="mask rgba-dark-slight"></div>
-                        </a>
-                    </div>
-                    <!--Card Body-->
-                    <div class="card-body bg-dark">
-                        <h4 class="card-title" style="text-align: center;">Weather Information Site</h4>
-                        <p style="text-align: center;">This website features a fixed in time weather display utilizing
-                            json and bootstrap.</p>
-                        <a href="https://clevelandiii.github.io/weather/" class="btn text-light"
-                            target="_blank">Go to the
-                            Website</a>
                     </div>
                 </div>
             </div>
+        </section>
+        <!--/resume-->
 
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-7">
-                <div class="card bg-dark">
-                    <!--Card Image-->
-                    <div class="view overlay">
-                        <img src="pokedex.PNG" alt="Rigged Website Homepage" class="card-img-top bg-dark">
-                        <a href="#">
-                            <div class="mask rgba-dark-slight"></div>
-                        </a>
-                    </div>
-                    <!--Card Body-->
-                    <div class="card-body bg-dark">
-                        <h4 class="card-title" style="text-align: center;">Pokedex Replica</h4>
-                        <p style="text-align: center;">This website features a pokedex for the three charmeleon forms
-                            and utilizes json and bootstrap.</p>
-                        <a href="https://clevelandiii.github.io/Pokedex/" class="btn text-light"
-                            target="_blank">Go to the
-                            Website</a>
-                    </div>
-                </div>
-            </div>
+        <hr />
 
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-7">
-                <div class="card bg-dark">
-                    <!--Card Image-->
-                    <div class="view overlay">
-                        <img src="Form.PNG" alt="Form Homepage" class="card-img-top bg-dark">
-                        <a href="#">
-                            <div class="mask rgba-dark-slight"></div>
-                        </a>
-                    </div>
-                    <!--Card Body-->
-                    <div class="card-body bg-dark">
-                        <h4 class="card-title" style="text-align: center;">Template Webpage</h4>
-                        <p style="text-align: center;">This website features a template html layout made with bootstrap instead of css/scss.</p>
-                        <a href="https://clevelandiii.github.io/bootstrap/" class="btn text-light"
-                            target="_blank">Go to the
-                            Website</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-7">
-                <div class="card bg-dark">
-                    <!--Card Image-->
-                    <div class="view overlay">
-                        <img src="buisness.PNG" alt="Buisness Homepage" class="card-img-top bg-dark">
-                        <a href="#">
-                            <div class="mask rgba-dark-slight"></div>
-                        </a>
-                    </div>
-                    <!--Card Body-->
-                    <div class="card-body bg-dark">
-                        <h4 class="card-title" style="text-align: center;">jQuery Playground</h4>
-                        <p style="text-align: center;">This site features a jQuery playground that has an variety of features that focus on jQuery features.</p>
-                        <a href="https://clevelandiii.github.io/jQuery/" class="btn text-light"
-                            target="_blank">Go to the
-                            Website</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/Portfolio-->
-
-    <hr>
-
-    <!--Contact-->
-    <div class="container" id="contact">
-        <h1 style="text-align: center;">Contact</h1><br>
-        <!--Row 1-->
-        <div class="row">
-
-            <div class="col-md-5 mb-4 col-lg-4">
-                <h2 style="text-align: center;">Quick Info</h2>
-                <hr>
-                <div class="resume-item pb-0" style="text-align: center;">
-                    <h4>Location:</h4>
-                    <p>Arizona</p><br>
-                    <h4>Email:</h4>
-                    <p>clevelandwilliams2003@gmail.com</p><br>
-                    <h4>Phone Number:</h4>
-                    <p>623-203-3715</p><br>
-                </div>
-            </div>
-
-            <div class="col-md-5 mb-4 col-lg-8">
-                <h2 style="text-align: center;">Send Me An Email</h2>
-                <hr>
-                <div style="text-align: center;">
-                    <input class="half" id="nospace" type="text" value="" placeholder="Your Name" name="Name">
-                    <input class="half" id="space" type="text" value="" placeholder="Your Email" name="Email"><br><br>
-                    <input id="norm" type="text" value="" placeholder="Subject" name="Subject"><br><br>
-                    <input id="large" type="text" value="" placeholder="Message" name="Message">
-                    <div id="messageRecieved"></div>
-                    <a class="btn text-light" id="submitMessage">Send Message</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!--/Contact-->
-
-    <!--Footer-->
-    <footer class="page-footer font-small bg-dark text-white pt-4 mt-4">
-        <div class="container text-center text-md-left">
+        <!--Portfolio-->
+        <div class="container" id="portfolio">
+            <h1 style="text-align: center">Portfolio</h1>
+            <br />
+            <!--Row 1-->
             <div class="row">
-
-                <div class="col-md-9 mt-md-0 mt-3 lg-9">
-                    <h5 class="text-uppercase">Details about the Website</h5>
-                    <p>This resume is constantly updated, and as such, is never finished.</p>
-                </div>
-                <hr class="d-md-none">
-
-                <div class="col-md-3 mt-md-0 mt-3 lg-3">
-                    <h5 class="text-uppercase">Social</h5>
-                    <div class="">
-                        <a href="https://github.com/ClevelandIII" target="_blank"><i class="fab fa-github" style="height: 50px; width: 50px;"></i></a>
-                        <a href="http://linkedin.com/in/cleveland-williams-a40918208"  target="_blank"><i class="fab fa-linkedin" style="height: 50px; width: 50px;"></i></a>
-                        <a href="https://twitter.com/Cleveland20XX"  target="_blank"><i class="fab fa-twitter" style="height: 50px; width: 50px;"></i></a>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-7">
+                    <div class="card bg-dark">
+                        <!--Card Image-->
+                        <div class="view overlay">
+                            <img
+                                src="Weather.PNG"
+                                alt="Rigged Website Homepage"
+                                class="card-img-top bg-dark"
+                            />
+                            <a href="#">
+                                <div class="mask rgba-dark-slight"></div>
+                            </a>
+                        </div>
+                        <!--Card Body-->
+                        <div class="card-body bg-dark">
+                            <h4 class="card-title" style="text-align: center">
+                                Weather Information Site
+                            </h4>
+                            <p style="text-align: center">
+                                This website features a fixed in time weather
+                                display utilizing json and bootstrap.
+                            </p>
+                            <a
+                                href="https://clevelandiii.github.io/weather/"
+                                class="btn text-light"
+                                target="_blank"
+                                >Go to the Website</a
+                            >
+                        </div>
                     </div>
                 </div>
 
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-7">
+                    <div class="card bg-dark">
+                        <!--Card Image-->
+                        <div class="view overlay">
+                            <img
+                                src="pokedex.PNG"
+                                alt="Rigged Website Homepage"
+                                class="card-img-top bg-dark"
+                            />
+                            <a href="#">
+                                <div class="mask rgba-dark-slight"></div>
+                            </a>
+                        </div>
+                        <!--Card Body-->
+                        <div class="card-body bg-dark">
+                            <h4 class="card-title" style="text-align: center">
+                                Pokedex Replica
+                            </h4>
+                            <p style="text-align: center">
+                                This website features a pokedex for the three
+                                charmeleon forms and utilizes json and
+                                bootstrap.
+                            </p>
+                            <a
+                                href="https://clevelandiii.github.io/Pokedex/"
+                                class="btn text-light"
+                                target="_blank"
+                                >Go to the Website</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-7">
+                    <div class="card bg-dark">
+                        <!--Card Image-->
+                        <div class="view overlay">
+                            <img
+                                src="Form.PNG"
+                                alt="Form Homepage"
+                                class="card-img-top bg-dark"
+                            />
+                            <a href="#">
+                                <div class="mask rgba-dark-slight"></div>
+                            </a>
+                        </div>
+                        <!--Card Body-->
+                        <div class="card-body bg-dark">
+                            <h4 class="card-title" style="text-align: center">
+                                Template Webpage
+                            </h4>
+                            <p style="text-align: center">
+                                This website features a template html layout
+                                made with bootstrap instead of css/scss.
+                            </p>
+                            <a
+                                href="https://clevelandiii.github.io/bootstrap/"
+                                class="btn text-light"
+                                target="_blank"
+                                >Go to the Website</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-7">
+                    <div class="card bg-dark">
+                        <!--Card Image-->
+                        <div class="view overlay">
+                            <img
+                                src="buisness.PNG"
+                                alt="Buisness Homepage"
+                                class="card-img-top bg-dark"
+                            />
+                            <a href="#">
+                                <div class="mask rgba-dark-slight"></div>
+                            </a>
+                        </div>
+                        <!--Card Body-->
+                        <div class="card-body bg-dark">
+                            <h4 class="card-title" style="text-align: center">
+                                jQuery Playground
+                            </h4>
+                            <p style="text-align: center">
+                                This site features a jQuery playground that has
+                                an variety of features that focus on jQuery
+                                features.
+                            </p>
+                            <a
+                                href="https://clevelandiii.github.io/jQuery/"
+                                class="btn text-light"
+                                target="_blank"
+                                >Go to the Website</a
+                            >
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-    </footer>
-    <!--/Footer-->
+        <!--/Portfolio-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
+        <hr />
 
+        <!--Contact-->
+        <div class="container" id="contact">
+            <h1 style="text-align: center">Contact</h1>
+            <br />
+            <!--Row 1-->
+            <div class="row">
+                <div class="col-md-5 mb-4 col-lg-4">
+                    <h2 style="text-align: center">Quick Info</h2>
+                    <hr />
+                    <div class="resume-item pb-0" style="text-align: center">
+                        <h4>Location:</h4>
+                        <p>Arizona</p>
+                        <br />
+                        <h4>Email:</h4>
+                        <p>clevelandwilliams2003@gmail.com</p>
+                        <br />
+                        <h4>Phone Number:</h4>
+                        <p>623-203-3715</p>
+                        <br />
+                    </div>
+                </div>
+
+                <div class="col-md-5 mb-4 col-lg-8">
+                    <h2 style="text-align: center">Send Me An Email</h2>
+                    <hr />
+                    <div style="text-align: center">
+                        <input
+                            class="half"
+                            id="nospace"
+                            type="text"
+                            value=""
+                            placeholder="Your Name"
+                            name="Name"
+                        />
+                        <input
+                            class="half"
+                            id="space"
+                            type="text"
+                            value=""
+                            placeholder="Your Email"
+                            name="Email"
+                        /><br /><br />
+                        <input
+                            id="norm"
+                            type="text"
+                            value=""
+                            placeholder="Subject"
+                            name="Subject"
+                        /><br /><br />
+                        <input
+                            id="large"
+                            type="text"
+                            value=""
+                            placeholder="Message"
+                            name="Message"
+                        />
+                        <div id="messageRecieved"></div>
+                        <a class="btn text-light" id="submitMessage"
+                            >Send Message</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Contact-->
+
+        <!--Footer-->
+        <footer class="page-footer font-small bg-dark text-white pt-4 mt-4">
+            <div class="container text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-9 mt-md-0 mt-3 lg-9">
+                        <h5 class="text-uppercase">
+                            Details about the Website
+                        </h5>
+                        <p>
+                            This resume is constantly updated, and as such, is
+                            never finished.
+                        </p>
+                    </div>
+                    <hr class="d-md-none" />
+
+                    <div class="col-md-3 mt-md-0 mt-3 lg-3">
+                        <h5 class="text-uppercase">Social</h5>
+                        <div class="">
+                            <a
+                                href="https://github.com/ClevelandIII"
+                                target="_blank"
+                                ><i
+                                    class="fab fa-github"
+                                    style="height: 50px; width: 50px"
+                                ></i
+                            ></a>
+                            <a
+                                href="http://linkedin.com/in/cleveland-williams-a40918208"
+                                target="_blank"
+                                ><i
+                                    class="fab fa-linkedin"
+                                    style="height: 50px; width: 50px"
+                                ></i
+                            ></a>
+                            <a
+                                href="https://twitter.com/Cleveland20XX"
+                                target="_blank"
+                                ><i
+                                    class="fab fa-twitter"
+                                    style="height: 50px; width: 50px"
+                                ></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

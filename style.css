@@ -1,3 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   font-family: sans-serif;
   background-color: #040404;
@@ -17,13 +152,16 @@ body::before {
   height: 100vh;
   z-index: -1;
 }
-
-a {
+body h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+body a {
   color: rgb(149, 186, 255);
   text-decoration: none;
   transition: 0.5s;
 }
-a:hover {
+body a:hover {
   color: rgb(21, 103, 255);
   text-decoration: none;
 }
@@ -33,9 +171,15 @@ a:hover {
   height: 100vh;
   background-size: cover;
   position: relative;
-  background: url("Capture.PNG");
+  text-align: center;
 }
-#landing::before {
+#landing #coverImage {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background: url("images/codeBackground.PNG");
+}
+#landing #coverImage::before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -44,41 +188,28 @@ a:hover {
   left: 0;
   bottom: 0;
 }
-#landing .landing-container {
-  position: absolute;
-  text-shadow: 2px 2px #040404;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 15px;
+#landing h1,
+#landing p {
+  position: relative;
+  top: -55vh;
 }
-#landing h1 {
-  margin: 0 0 10px 0;
-  font-size: 64px;
-  color: #fff;
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  -moz-column-gap: 4vw;
+       column-gap: 4vw;
 }
-#landing h2 {
-  color: #eee;
-  margin-bottom: 50px;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+#about img {
+  width: 100%;
+  margin-left: 10vh;
 }
-#landing .btn-scroll {
-  transition: 0.5s;
-  color: rgb(149, 186, 255);
-}
-#landing .btn-scroll i {
-  font-size: 48px;
-}
-#landing .btn-scroll:hover {
-  color: rgb(21, 103, 255);
+#about section {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2vw;
+  margin: auto 0;
+  width: 80%;
 }
 
 .skills .progress {
@@ -157,12 +288,11 @@ a:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
+  background: rgb(0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb {
   background: rgba(149, 186, 255, 0.5);
-  border-radius: 7px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(21, 103, 255, 0.5);
