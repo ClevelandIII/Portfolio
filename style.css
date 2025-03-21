@@ -134,7 +134,7 @@ table {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #040404;
   color: #fff;
   position: relative;
@@ -154,6 +154,10 @@ body::before {
 }
 body h1 {
   font-size: 2rem;
+  margin-bottom: 15px;
+}
+body h2 {
+  font-size: 1.75rem;
   margin-bottom: 15px;
 }
 body a {
@@ -196,20 +200,48 @@ body a:hover {
 
 #about {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  -moz-column-gap: 4vw;
-       column-gap: 4vw;
+  grid-template-columns: 1fr 1fr;
+  padding: 2vh 0;
 }
-#about img {
-  width: 100%;
-  margin-left: 10vh;
+#about #carousel {
+  color: white;
 }
-#about section {
+#about #carousel .spaced {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 40%;
+}
+#about #carousel p {
+  margin: auto;
+  text-align: center;
+}
+#about #carousel hr {
+  margin: auto;
+  margin-bottom: 3.5vw;
+  width: 50%;
+}
+#about #carousel div {
+  text-align: center;
+}
+#about #carousel #carouselExampleCaptions {
+  width: 60%;
+  margin: auto;
+}
+#about #carousel #resize {
+  width: 2vw;
+}
+#about #carousel img {
+  border-radius: 50%;
+}
+#about #aboutText {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 2vw;
+  grid-template-rows: 1fr 2fr;
   margin: auto 0;
   width: 80%;
+}
+#about #aboutText p {
+  line-height: 20px;
 }
 
 .skills .progress {

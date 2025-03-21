@@ -136,7 +136,7 @@ $primary-color: rgb(149, 186, 255);
 $secondary-color: rgb(21, 103, 255);
 
 body {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #040404;
     color: #fff;
     position: relative;
@@ -157,6 +157,11 @@ body {
 
     h1 {
         font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.75rem;
         margin-bottom: 15px;
     }
 
@@ -209,20 +214,63 @@ body {
 
 #about {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    column-gap: 4vw;
+    grid-template-columns: 1fr 1fr;
+    padding: 2vh 0;
 
-    img {
-        width: 100%;
-        margin-left: 10vh;
+    // img {
+    //     width: 50%;
+    //     margin: 0 auto;
+    //     border-radius: 50%;
+    // }
+
+    #carousel {
+        color: white;
+
+        .spaced {
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            width: 40%;
+        }
+
+        p {
+            margin: auto;
+            text-align: center;
+        }
+
+        hr {
+            margin: auto;
+            margin-bottom: 3.5vw;
+            width: 50%;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        #carouselExampleCaptions {
+            width: 60%;
+            margin: auto;
+        }
+
+        #resize {
+            width: 2vw;
+        }
+
+        img {
+            border-radius: 50%;
+        }
     }
 
-    section {
+    #aboutText {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 2vw;
+        grid-template-rows: 1fr 2fr;
         margin: auto 0;
         width: 80%;
+
+        p {
+            line-height: 20px;
+        }
     }
 }
 
