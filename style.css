@@ -244,33 +244,29 @@ body a:hover {
   line-height: 20px;
 }
 
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+#skills h2 {
+  text-align: center;
+  margin-bottom: 10vh;
 }
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 500;
-  font-family: sans-serif;
-  color: #fff;
+#skills .frontEnd {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+#skills .frontEnd div {
+  display: grid;
 }
-.skills .progress-bar-wrap {
-  background: gray;
-  border-radius: 7px;
+#skills .frontEnd #frontEndImages div {
+  align-content: center;
 }
-.skills .progress-bar {
-  height: 10px;
-  background: linear-gradient(to right, rgb(21, 103, 255), rgb(149, 186, 255));
-  border-radius: 7px;
+#skills .frontEnd img {
+  height: 8vw;
+  margin: auto;
+  margin-bottom: 4vw;
+}
+#skills .frontEnd p {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10vw;
 }
 
 .resume .resume-title {

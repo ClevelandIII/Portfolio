@@ -217,12 +217,6 @@ body {
     grid-template-columns: 1fr 1fr;
     padding: 2vh 0;
 
-    // img {
-    //     width: 50%;
-    //     margin: 0 auto;
-    //     border-radius: 50%;
-    // }
-
     #carousel {
         color: white;
 
@@ -274,38 +268,39 @@ body {
     }
 }
 
-.skills {
-    .progress {
-        height: 60px;
-        display: block;
-        background: none;
-        border-radius: 0;
+//Skills
 
-        .skill {
-            padding: 10px 0;
-            margin: 0;
-            text-transform: uppercase;
-            display: block;
-            font-weight: 500;
-            font-family: sans-serif;
-            color: #fff;
+#skills {
+    h2 {
+        text-align: center;
+        margin-bottom: 10vh;
+    }
 
-            .val {
-                float: right;
-                font-style: normal;
+    .frontEnd {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        div {
+            display: grid;
+        }
+
+        #frontEndImages {
+            div {
+                align-content: center;
             }
         }
-    }
 
-    .progress-bar-wrap {
-        background: gray;
-        border-radius: 7px;
-    }
+        img {
+            height: 8vw;
+            margin: auto;
+            margin-bottom: 4vw;
+        }
 
-    .progress-bar {
-        height: 10px;
-        background: linear-gradient(to right, $secondary-color, $primary-color);
-        border-radius: 7px;
+        p {
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 10vw;
+        }
     }
 }
 
